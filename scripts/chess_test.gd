@@ -13,8 +13,7 @@ func _process(delta):
 # Custom code
 
 func main():
-	var myboard = ChessBoard.new()
-	myboard.out_board()
+	var myboard = ChessBoard.new("rnbqkbnr/pppp1ppp/4p3/8/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq g3 0 2")
 
 func _run():
 	main()
