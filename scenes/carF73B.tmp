@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dde8ge0kgu1s8"]
+
+[ext_resource type="Script" path="res://scripts/card_scroll_container.gd" id="1_13gh1"]
+
+[node name="card_viewer" type="Node2D"]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 2
+script = ExtResource("1_13gh1")
+
+[node name="Control" type="Control" parent="ScrollContainer"]
+layout_mode = 2

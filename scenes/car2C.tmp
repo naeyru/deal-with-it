@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dde8ge0kgu1s8"]
+
+[ext_resource type="Script" path="res://scripts/card_scroll_container.gd" id="1_13gh1"]
+[ext_resource type="Texture2D" uid="uid://dn8ux1rjle5s3" path="res://media/cards/graphics/PawnCard.svg" id="1_mahgp"]
+[ext_resource type="Texture2D" uid="uid://bai3vdq2sih8" path="res://media/cards/graphics/KnightCard.svg" id="2_cp422"]
+[ext_resource type="Script" path="res://scenes/card_view_hbox_container.gd" id="2_fuctc"]
+[ext_resource type="Texture2D" uid="uid://bnrrtws7hl1fv" path="res://media/cards/graphics/BishopCard.svg" id="3_sp73f"]
+[ext_resource type="Texture2D" uid="uid://cgrul2gheq4va" path="res://media/cards/graphics/RookCard.svg" id="6_iwa3r"]
+[ext_resource type="Texture2D" uid="uid://bx6pamo3ko8bm" path="res://media/cards/graphics/QueenCard.svg" id="7_o4cah"]
+
+[node name="card_viewer" type="Node2D"]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(1080, 720)
+offset_right = 40.0
+offset_bottom = 40.0
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+script = ExtResource("1_13gh1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(2000, 600)
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+script = ExtResource("2_fuctc")
+
+[node name="PawnCard" type="Sprite2D" parent="ScrollContainer/HBoxContainer"]
+position = Vector2(272, 344)
+texture = ExtResource("1_mahgp")
+
+[node name="KnightCard" type="Sprite2D" parent="ScrollContainer/HBoxContainer"]
+position = Vector2(664, 352)
+texture = ExtResource("2_cp422")
+
+[node name="BishopCard" type="Sprite2D" parent="ScrollContainer/HBoxContainer"]
+position = Vector2(1080, 368)
+texture = ExtResource("3_sp73f")
+
+[node name="RookCard" type="Sprite2D" parent="ScrollContainer/HBoxContainer"]
+position = Vector2(1248, 448)
+texture = ExtResource("6_iwa3r")
+
+[node name="QueenCard" type="Sprite2D" parent="ScrollContainer/HBoxContainer"]
+position = Vector2(1296, 464)
+texture = ExtResource("7_o4cah")

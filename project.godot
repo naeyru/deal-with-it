@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="Chess"
-run/main_scene="res://scenes/test.tscn"
+run/main_scene="res://scenes/card_viewer.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"

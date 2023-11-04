@@ -1,0 +1,127 @@
+[gd_scene load_steps=20 format=3 uid="uid://dde8ge0kgu1s8"]
+
+[ext_resource type="Texture2D" uid="uid://daqllpvdrp8ac" path="res://media/cards/graphics/AnnointedCard.svg" id="1_3ctwi"]
+[ext_resource type="Script" path="res://scripts/card_scroll_container.gd" id="1_13gh1"]
+[ext_resource type="Texture2D" uid="uid://dn8ux1rjle5s3" path="res://media/cards/graphics/PawnCard.svg" id="1_mahgp"]
+[ext_resource type="Texture2D" uid="uid://bai3vdq2sih8" path="res://media/cards/graphics/KnightCard.svg" id="2_cp422"]
+[ext_resource type="Script" path="res://scenes/card_view_hbox_container.gd" id="2_fuctc"]
+[ext_resource type="Texture2D" uid="uid://rspqq52e62u0" path="res://media/cards/graphics/ButterFingersCard.svg" id="3_opy8p"]
+[ext_resource type="Texture2D" uid="uid://bnrrtws7hl1fv" path="res://media/cards/graphics/BishopCard.svg" id="3_sp73f"]
+[ext_resource type="Texture2D" uid="uid://cgrul2gheq4va" path="res://media/cards/graphics/RookCard.svg" id="6_iwa3r"]
+[ext_resource type="Texture2D" uid="uid://bx6pamo3ko8bm" path="res://media/cards/graphics/QueenCard.svg" id="7_o4cah"]
+[ext_resource type="Texture2D" uid="uid://b36sc1mn05gb8" path="res://media/cards/graphics/RevertCard.svg" id="8_c5c1w"]
+[ext_resource type="Texture2D" uid="uid://cjuvaf8l5wu61" path="res://media/cards/graphics/DivorceCard.svg" id="11_qjtso"]
+[ext_resource type="Texture2D" uid="uid://mo6qkxf0bkt1" path="res://media/cards/graphics/FalseProphetCard.svg" id="12_4xd8k"]
+[ext_resource type="Texture2D" uid="uid://c7r4ro4gt7yxs" path="res://media/cards/graphics/HighHeelsCard.svg" id="13_23yg6"]
+[ext_resource type="Texture2D" uid="uid://csdhlhajmbd6t" path="res://media/cards/graphics/MartyrdomCard.svg" id="14_utq5b"]
+[ext_resource type="Texture2D" uid="uid://chtqwe86i8ir7" path="res://media/cards/graphics/NuclearWarfareCard.svg" id="15_1nx76"]
+[ext_resource type="Texture2D" uid="uid://dm3ek4m7hvv8q" path="res://media/cards/graphics/ParkFeedingCard.svg" id="16_0ilcn"]
+[ext_resource type="Texture2D" uid="uid://b257vp30geua7" path="res://media/cards/graphics/TurduckenCard.svg" id="17_kyilb"]
+[ext_resource type="Texture2D" uid="uid://de5mxmjrdss14" path="res://media/cards/graphics/RaceAccidentCard.svg" id="18_u73mu"]
+[ext_resource type="Texture2D" uid="uid://c7kurylw3y2o0" path="res://media/cards/graphics/RainingMenCard.svg" id="19_7n3am"]
+
+[node name="card_viewer" type="Node2D"]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(1440, 720)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 174.97
+offset_top = 100.0
+offset_right = 1714.97
+offset_bottom = 820.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(1440, 720)
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 25
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CenterContainer/MarginContainer"]
+custom_minimum_size = Vector2(1440, 650)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+script = ExtResource("1_13gh1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/MarginContainer/ScrollContainer"]
+custom_minimum_size = Vector2(7250, 600)
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+script = ExtResource("2_fuctc")
+
+[node name="PawnCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(225, 325)
+texture = ExtResource("1_mahgp")
+
+[node name="KnightCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(650, 325)
+texture = ExtResource("2_cp422")
+
+[node name="BishopCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(1075, 325)
+texture = ExtResource("3_sp73f")
+
+[node name="RookCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(1500, 325)
+texture = ExtResource("6_iwa3r")
+
+[node name="QueenCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(1925, 325)
+texture = ExtResource("7_o4cah")
+
+[node name="RevertCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(2350, 325)
+texture = ExtResource("8_c5c1w")
+
+[node name="AnnointedCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(2775, 325)
+texture = ExtResource("1_3ctwi")
+
+[node name="ButterFingersCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(3200, 325)
+texture = ExtResource("3_opy8p")
+
+[node name="DivorceCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(3625, 325)
+texture = ExtResource("11_qjtso")
+
+[node name="FalseProphetCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(4050, 325)
+texture = ExtResource("12_4xd8k")
+
+[node name="HighHeelsCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(4475, 325)
+texture = ExtResource("13_23yg6")
+
+[node name="MartyrdomCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(4900, 325)
+texture = ExtResource("14_utq5b")
+
+[node name="NuclearWarfareCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(5325, 325)
+texture = ExtResource("15_1nx76")
+
+[node name="ParkFeedingCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(5750, 325)
+texture = ExtResource("16_0ilcn")
+
+[node name="TurduckenCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(6175, 325)
+texture = ExtResource("17_kyilb")
+
+[node name="RaceAccidentCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(6600, 325)
+texture = ExtResource("18_u73mu")
+
+[node name="RainingMenCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(7025, 325)
+texture = ExtResource("19_7n3am")
