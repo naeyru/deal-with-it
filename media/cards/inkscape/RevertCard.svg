@@ -10,7 +10,7 @@
    inkscape:export-filename="CardTemplate.svg"
    inkscape:export-xdpi="26.281288"
    inkscape:export-ydpi="26.281288"
-   sodipodi:docname="CardTemplate.svg"
+   sodipodi:docname="RevertCard.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -29,7 +29,7 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.34"
-     inkscape:cx="200.37313"
+     inkscape:cx="201.1194"
      inkscape:cy="300.37313"
      inkscape:window-width="1920"
      inkscape:window-height="991"
@@ -39,6 +39,67 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1.6670001"
+       markerHeight="1.6670001"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="Dot1"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="-1.331636"
+       refY="0.11164884"
+       orient="11.90087891"
+       inkscape:stockid="TriangleStart"
+       markerWidth="2.4373333"
+       markerHeight="2.942348"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="none"
+       markerUnits="strokeWidth">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <linearGradient
+       id="linearGradient38203"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop38201" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient38195"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop38193" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect37707"
+       is_visible="true"
+       lpeversion="1" />
     <linearGradient
        id="linearGradient3910"
        inkscape:swatch="solid">
@@ -92,13 +153,6 @@
        height="156.10403"
        x="1.6582794"
        y="1.6582794" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke-width:0.289246;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       id="rect711"
-       width="96.429878"
-       height="80.496231"
-       x="4.7017326"
-       y="31.71199" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,0,9.5250005)"
@@ -106,11 +160,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:0;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect721);display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        x="80.755417"
        y="0"><tspan
-         x="35.182063"
+         x="104.60911"
          y="42.685792"
-         id="tspan34214"><tspan
-           style="baseline-shift:baseline"
-           id="tspan34212">Card Name</tspan></tspan></text>
+         id="tspan42216">Revert</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:0px;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
@@ -129,30 +181,34 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.1487px;line-height:23.1487px;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect857);display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"><tspan
          x="20.732422"
          y="489.35381"
-         id="tspan34218"><tspan
+         id="tspan42220"><tspan
            style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34216">Lorem ipsum dolor sit amet, </tspan></tspan><tspan
+           id="tspan42218">Revert enemy capture, and </tspan></tspan><tspan
          x="20.732422"
          y="517.27782"
-         id="tspan34222"><tspan
+         id="tspan42224"><tspan
            style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34220">consectetur adipiscing elit, sed </tspan></tspan><tspan
+           id="tspan42222">claim the piece that attacked. </tspan></tspan><tspan
          x="20.732422"
          y="545.20183"
-         id="tspan34226"><tspan
+         id="tspan42228"><tspan
            style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34224">do eiusmod tempor incididunt </tspan></tspan><tspan
-         x="20.732422"
-         y="573.12584"
-         id="tspan34230"><tspan
-           style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34228">ut labore et dolore magna</tspan></tspan></text>
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;stroke:#331f14"
-       id="rect33301"
-       width="96.429878"
-       height="80.496231"
-       x="4.7017326"
-       y="31.71199" />
+           id="tspan42226">Then discard this card.</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:0px;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style';fill:#941913;stroke-width:1;paint-order:markers fill stroke;stop-color:#000000"
+       x="58.583115"
+       y="14.156812"
+       id="text37431"><tspan
+         sodipodi:role="line"
+         id="tspan37429"
+         style="stroke-width:1"></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:6.89796;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#Dot);paint-order:markers fill stroke;stop-color:#000000"
+       d="M 38.802042,94.913766 C 33.480053,91.897985 29.133315,87.19102 26.5499,81.64625 23.966485,76.101481 23.158825,69.745591 24.27335,63.730914 c 1.114526,-6.014677 4.145872,-11.659195 8.544452,-15.910194 4.39858,-4.251 10.143226,-7.088023 16.192423,-7.996712 6.516199,-0.978841 13.349386,0.295812 19.074447,3.55812 5.725062,3.262308 10.30501,8.491195 12.784663,14.596136 2.479653,6.104941 2.842989,13.046494 1.014233,19.376947 -1.828756,6.330453 -5.83779,12.008906 -11.190987,15.851075"
+       id="path37705"
+       inkscape:path-effect="#path-effect37707"
+       inkscape:original-d="M 38.802042,94.913766 C 31.55331,95.816483 45.481756,49.8244 49.010225,39.824008 53.236135,27.846927 87.426389,67.668733 70.692581,93.206286"
+       sodipodi:nodetypes="csc" />
   </g>
 </svg>

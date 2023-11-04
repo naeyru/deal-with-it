@@ -10,10 +10,11 @@
    inkscape:export-filename="CardTemplate.svg"
    inkscape:export-xdpi="26.281288"
    inkscape:export-ydpi="26.281288"
-   sodipodi:docname="CardTemplate.svg"
+   sodipodi:docname="AnnointedCard.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -29,8 +30,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.34"
-     inkscape:cx="200.37313"
-     inkscape:cy="300.37313"
+     inkscape:cx="189.55224"
+     inkscape:cy="240.67164"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -39,6 +40,44 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_1white"
+       id="pattern37145"
+       patternTransform="matrix(21.509111,2.462095,-1.2719792,11.112139,8.0954602,-0.19745025)" />
+    <pattern
+       inkscape:collect="always"
+       patternUnits="userSpaceOnUse"
+       width="2"
+       height="1"
+       patternTransform="translate(0,0) scale(10,10)"
+       id="Strips1_1white"
+       inkscape:stockid="Stripes 1:1 white"
+       inkscape:isstock="true">
+      <rect
+         style="fill:white;stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect2899" />
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient37063">
+      <stop
+         style="stop-color:#e49719;stop-opacity:1;"
+         offset="0"
+         id="stop37059" />
+      <stop
+         style="stop-color:#94850f;stop-opacity:0.49498329;"
+         offset="0.63876653"
+         id="stop37071" />
+      <stop
+         style="stop-color:#5f100c;stop-opacity:0;"
+         offset="1"
+         id="stop37061" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3910"
        inkscape:swatch="solid">
@@ -79,6 +118,28 @@
        width="368.24066"
        height="96.749557"
        id="rect721" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient37063"
+       id="radialGradient37067"
+       cx="25.510199"
+       cy="61.149963"
+       fx="25.510199"
+       fy="61.149963"
+       r="72.760414"
+       gradientTransform="matrix(0.78018995,0,0,0.7652646,6.7920994,12.77446)"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath37184">
+      <rect
+         style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke-width:0.289245;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         id="rect37186"
+         width="96.429878"
+         height="80.496231"
+         x="4.7017331"
+         y="31.71199" />
+    </clipPath>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -92,13 +153,6 @@
        height="156.10403"
        x="1.6582794"
        y="1.6582794" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke-width:0.289246;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       id="rect711"
-       width="96.429878"
-       height="80.496231"
-       x="4.7017326"
-       y="31.71199" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,0,9.5250005)"
@@ -106,11 +160,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:0;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect721);display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        x="80.755417"
        y="0"><tspan
-         x="35.182063"
+         x="63.567463"
          y="42.685792"
-         id="tspan34214"><tspan
-           style="baseline-shift:baseline"
-           id="tspan34212">Card Name</tspan></tspan></text>
+         id="tspan37339">Anointed</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:0px;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
@@ -129,24 +181,65 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.1487px;line-height:23.1487px;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect857);display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"><tspan
          x="20.732422"
          y="489.35381"
-         id="tspan34218"><tspan
+         id="tspan37343"><tspan
            style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34216">Lorem ipsum dolor sit amet, </tspan></tspan><tspan
+           id="tspan37341">Promote any pawn to a bishop, </tspan></tspan><tspan
          x="20.732422"
          y="517.27782"
-         id="tspan34222"><tspan
+         id="tspan37347"><tspan
            style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34220">consectetur adipiscing elit, sed </tspan></tspan><tspan
-         x="20.732422"
-         y="545.20183"
-         id="tspan34226"><tspan
-           style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34224">do eiusmod tempor incididunt </tspan></tspan><tspan
-         x="20.732422"
-         y="573.12584"
-         id="tspan34230"><tspan
-           style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
-           id="tspan34228">ut labore et dolore magna</tspan></tspan></text>
+           id="tspan37345">and discard this card.</tspan></tspan></text>
+    <g
+       id="g37174"
+       clip-path="url(#clipPath37184)">
+      <g
+         id="g37152">
+        <rect
+           style="fill:#941913;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+           id="rect37147"
+           width="118.86504"
+           height="88.655159"
+           x="-3.6137106"
+           y="26.201277" />
+        <rect
+           style="mix-blend-mode:overlay;fill:url(#pattern37145);fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+           id="rect37125"
+           width="107.80783"
+           height="86.878105"
+           x="1.5199959"
+           y="27.385979" />
+      </g>
+      <g
+         id="g37162">
+        <ellipse
+           style="mix-blend-mode:lighten;fill:url(#radialGradient37067);fill-opacity:1;stroke:none;stroke-width:0.883284;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+           id="path37003"
+           cx="26.694901"
+           cy="59.570362"
+           rx="56.766945"
+           ry="55.680969" />
+        <rect
+           style="fill:#d08600;fill-opacity:1;stroke:#331f14;stroke-width:1.21303;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+           id="rect36868"
+           width="100.15404"
+           height="6.8712845"
+           x="55.750267"
+           y="39.294781"
+           transform="matrix(0.91514212,0.40313136,-0.41259437,0.91091486,0,0)" />
+        <circle
+           style="fill:#d08600;fill-opacity:1;stroke:#331f14;stroke-width:0.892664;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+           id="circle36924"
+           cx="29.96863"
+           cy="59.712536"
+           r="12.690483" />
+        <circle
+           style="fill:#941913;fill-opacity:1;stroke:#0d0b0b;stroke-width:1.04025;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+           id="path36922"
+           cx="25.608925"
+           cy="57.137787"
+           r="14.788643" />
+      </g>
+    </g>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;stroke:#331f14"
        id="rect33301"
