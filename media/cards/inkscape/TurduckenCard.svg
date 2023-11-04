@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400.00006"
+   height="600"
+   viewBox="0 0 105.83335 158.75"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="CardTemplate.svg"
+   inkscape:export-xdpi="26.281288"
+   inkscape:export-ydpi="26.281288"
+   sodipodi:docname="TurduckenCard.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="0.94752309"
+     inkscape:cx="-180.47054"
+     inkscape:cy="336.13957"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient3910"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3908" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3902"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3900" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1908"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#412a2a;stop-opacity:1;"
+         offset="0.83033931"
+         id="stop1904" />
+      <stop
+         style="stop-color:#412a2a;stop-opacity:0;"
+         offset="0.84431136"
+         id="stop1906" />
+    </linearGradient>
+    <rect
+       x="20.732048"
+       y="466.96472"
+       width="356.39377"
+       height="115.50713"
+       id="rect857" />
+    <rect
+       x="13.821366"
+       y="17.770327"
+       width="368.24066"
+       height="96.749557"
+       id="rect721" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.33529438,-0.33529437)">
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#c87137;fill-opacity:1;stroke:#331f14;stroke-width:2.64597;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+       id="rect386"
+       width="103.18738"
+       height="156.10403"
+       x="1.6582794"
+       y="1.6582794" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#dc4e27;fill-opacity:1;stroke-width:0.289246;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       id="rect711"
+       width="96.429878"
+       height="80.496231"
+       x="4.7017326"
+       y="31.71199" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0,9.5250005)"
+       id="text719"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:0;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect721);display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       x="80.755417"
+       y="0"><tspan
+         x="38.176853"
+         y="42.685792"
+         id="tspan17970">Turducken</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:0px;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       x="4.3020148"
+       y="121.22047"
+       id="text733"><tspan
+         sodipodi:role="line"
+         id="tspan731"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="4.3020148"
+         y="121.22047">Description:</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.27431353,0,0,0.27431353,-0.8676689,-4.702566)"
+       id="text855"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.1487px;line-height:23.1487px;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect857);display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"><tspan
+         x="20.732422"
+         y="489.35381"
+         id="tspan17974"><tspan
+           style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
+           id="tspan17972">Remove the duck from the </tspan></tspan><tspan
+         x="20.732422"
+         y="517.27782"
+         id="tspan17978"><tspan
+           style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
+           id="tspan17976">battlefield, and discard this </tspan></tspan><tspan
+         x="20.732422"
+         y="545.20183"
+         id="tspan17982"><tspan
+           style="font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style'"
+           id="tspan17980">card.</tspan></tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;stroke:#331f14"
+       id="rect33301"
+       width="96.429878"
+       height="80.496231"
+       x="4.7017326"
+       y="31.71199" />
+    <g
+       id="g17936"
+       transform="translate(-3.159204,-2.9617537)">
+      <g
+         id="g17917">
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.601001"
+           id="path17074"
+           cx="55.226463"
+           cy="86.917229"
+           rx="43.439056"
+           ry="16.487097" />
+        <ellipse
+           style="fill:#d1d1d1;fill-opacity:1;fill-rule:evenodd;stroke-width:0.493037"
+           id="ellipse17910"
+           cx="55.226463"
+           cy="85.329727"
+           rx="35.635635"
+           ry="13.525343" />
+        <ellipse
+           style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke-width:0.457049"
+           id="ellipse17912"
+           cx="55.226463"
+           cy="86.388062"
+           rx="33.034496"
+           ry="12.538092" />
+      </g>
+      <g
+         id="g17922"
+         transform="translate(0.59235075,-0.789801)">
+        <path
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.601001"
+           d="m 80.894234,62.1339 7.166949,-4.88661 c 0,0 -2.523179,-0.623179 -2.730961,-1.66974 -0.32071,-1.615369 1.298143,-3.658924 2.910995,-3.992067 4.909508,-1.014086 3.347789,4.427354 3.347789,4.427354 0,0 5.23123,-1.036299 4.936005,3.204395 -0.11094,1.593555 -1.394984,4.629605 -3.611956,3.149496 -1.61522,-1.078363 -1.77526,-3.208041 -1.77526,-3.208041 l -9.630138,8.127292 z"
+           id="path16910"
+           sodipodi:nodetypes="ccascssccc" />
+        <path
+           id="path16318"
+           style="fill:#552200;fill-rule:evenodd;stroke-width:0.468963"
+           d="m 87.145779,79.710297 c 0,11.232021 -14.732774,16.289643 -32.906567,16.289643 -18.173793,0 -32.906564,-5.057622 -32.906567,-16.289643 0,-11.232023 1.20743,-16.881997 19.381225,-16.881997 1.20039,0 16.503462,0.237174 17.670574,0.314611 16.502857,1.094946 28.761335,6.077246 28.761335,16.567386 z"
+           sodipodi:nodetypes="ssssss" />
+        <path
+           id="path16320"
+           style="fill:#803300;fill-rule:evenodd;stroke-width:0.794477"
+           d="m 82.311665,66.861193 c 0.730044,4.907715 -16.147994,16.692659 -24.086187,17.8735 -7.938191,1.18084 -14.965186,-1.840386 -15.695233,-6.748102 -0.730044,-4.907717 4.53594,-13.151566 12.474134,-14.332407 2.125661,-0.316201 7.730264,1.443574 12.098732,0.677906 6.4554,-1.131449 11.948835,-4.677109 13.673399,-3.341309 1.466657,1.136031 1.289478,4.218852 1.535155,5.870412 z"
+           sodipodi:nodetypes="sssssss" />
+      </g>
+    </g>
+  </g>
+</svg>
