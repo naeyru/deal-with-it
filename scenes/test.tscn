@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://8874otemjds4"]
+
+[ext_resource type="Texture2D" uid="uid://rge4l47ryqe1" path="res://media/pieces/dark_bishop.svg" id="1_jdop5"]
+[ext_resource type="Texture2D" uid="uid://bvrkgw5ps0j1q" path="res://media/pieces/dark_king.svg" id="3_7n1g0"]
+[ext_resource type="Texture2D" uid="uid://747xpinj7vm7" path="res://media/pieces/dark_knight.svg" id="3_vtpv2"]
+[ext_resource type="Texture2D" uid="uid://50cp1uf0wd5m" path="res://media/pieces/dark_pawn.svg" id="4_311sm"]
+[ext_resource type="Texture2D" uid="uid://cefhmel05l11l" path="res://media/pieces/dark_queen.svg" id="5_dp8le"]
+[ext_resource type="Texture2D" uid="uid://lx66n60bowh5" path="res://media/pieces/dark_rook.svg" id="6_ycgp7"]
+
+[node name="DarkKing" type="Sprite2D"]
+position = Vector2(233, 210)
+texture = ExtResource("3_7n1g0")
+
+[node name="DarkBishop" type="Sprite2D" parent="."]
+position = Vector2(756, 19)
+texture = ExtResource("1_jdop5")
+
+[node name="DarkKnight" type="Sprite2D" parent="."]
+position = Vector2(-8, 393)
+texture = ExtResource("3_vtpv2")
+
+[node name="DarkPawn" type="Sprite2D" parent="."]
+position = Vector2(365, 383)
+texture = ExtResource("4_311sm")
+
+[node name="DarkQueen" type="Sprite2D" parent="."]
+position = Vector2(749, 400)
+texture = ExtResource("5_dp8le")
+
+[node name="DarkRook" type="Sprite2D" parent="."]
+position = Vector2(379, 20)
+texture = ExtResource("6_ycgp7")
