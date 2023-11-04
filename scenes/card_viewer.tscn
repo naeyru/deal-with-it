@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dde8ge0kgu1s8"]
+[gd_scene load_steps=21 format=3 uid="uid://dde8ge0kgu1s8"]
 
 [ext_resource type="Texture2D" uid="uid://daqllpvdrp8ac" path="res://media/cards/graphics/AnnointedCard.svg" id="1_3ctwi"]
 [ext_resource type="Script" path="res://scripts/card_scroll_container.gd" id="1_13gh1"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://b257vp30geua7" path="res://media/cards/graphics/TurduckenCard.svg" id="17_kyilb"]
 [ext_resource type="Texture2D" uid="uid://de5mxmjrdss14" path="res://media/cards/graphics/RaceAccidentCard.svg" id="18_u73mu"]
 [ext_resource type="Texture2D" uid="uid://c7kurylw3y2o0" path="res://media/cards/graphics/RainingMenCard.svg" id="19_7n3am"]
+[ext_resource type="Script" path="res://scenes/go_back_button.gd" id="20_7r15q"]
 
 [node name="card_viewer" type="Node2D"]
 
@@ -27,14 +28,17 @@ custom_minimum_size = Vector2(1440, 720)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 174.97
+offset_left = 190.0
 offset_top = 100.0
-offset_right = 1714.97
+offset_right = 1730.0
 offset_bottom = 820.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(1440, 720)
 layout_mode = 2
 theme_override_constants/margin_left = 50
@@ -42,7 +46,7 @@ theme_override_constants/margin_top = 25
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 25
 
-[node name="ScrollContainer" type="ScrollContainer" parent="CenterContainer/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CenterContainer/VBoxContainer/MarginContainer"]
 custom_minimum_size = Vector2(1440, 650)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -51,77 +55,90 @@ horizontal_scroll_mode = 2
 vertical_scroll_mode = 0
 script = ExtResource("1_13gh1")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/MarginContainer/ScrollContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer"]
 custom_minimum_size = Vector2(7250, 600)
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
 script = ExtResource("2_fuctc")
 
-[node name="PawnCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="PawnCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(225, 325)
 texture = ExtResource("1_mahgp")
 
-[node name="KnightCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="KnightCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(650, 325)
 texture = ExtResource("2_cp422")
 
-[node name="BishopCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="BishopCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(1075, 325)
 texture = ExtResource("3_sp73f")
 
-[node name="RookCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="RookCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(1500, 325)
 texture = ExtResource("6_iwa3r")
 
-[node name="QueenCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="QueenCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(1925, 325)
 texture = ExtResource("7_o4cah")
 
-[node name="RevertCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="RevertCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(2350, 325)
 texture = ExtResource("8_c5c1w")
 
-[node name="AnnointedCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="AnnointedCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(2775, 325)
 texture = ExtResource("1_3ctwi")
 
-[node name="ButterFingersCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="ButterFingersCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(3200, 325)
 texture = ExtResource("3_opy8p")
 
-[node name="DivorceCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="DivorceCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(3625, 325)
 texture = ExtResource("11_qjtso")
 
-[node name="FalseProphetCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="FalseProphetCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(4050, 325)
 texture = ExtResource("12_4xd8k")
 
-[node name="HighHeelsCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="HighHeelsCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(4475, 325)
 texture = ExtResource("13_23yg6")
 
-[node name="MartyrdomCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="MartyrdomCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(4900, 325)
 texture = ExtResource("14_utq5b")
 
-[node name="NuclearWarfareCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="NuclearWarfareCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(5325, 325)
 texture = ExtResource("15_1nx76")
 
-[node name="ParkFeedingCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="ParkFeedingCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(5750, 325)
 texture = ExtResource("16_0ilcn")
 
-[node name="TurduckenCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="TurduckenCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(6175, 325)
 texture = ExtResource("17_kyilb")
 
-[node name="RaceAccidentCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="RaceAccidentCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(6600, 325)
 texture = ExtResource("18_u73mu")
 
-[node name="RainingMenCard" type="Sprite2D" parent="CenterContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+[node name="RainingMenCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(7025, 325)
 texture = ExtResource("19_7n3am")
+
+[node name="MarginContainer2" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 25
+text = "Go Back"
+script = ExtResource("20_7r15q")
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MarginContainer2/Button" to="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer" method="_on_button_pressed"]

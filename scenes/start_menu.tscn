@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://cun6chb3ryqsy"]
+
+[ext_resource type="Script" path="res://scenes/button_view_cards.gd" id="1_rcmli"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nd0ik"]
+font_size = 40
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(1080, 720)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1080.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Deal With It"
+label_settings = SubResource("LabelSettings_nd0ik")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer/StartContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Start"
+
+[node name="CardViewContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="CardViewerButton" type="Button" parent="CenterContainer/VBoxContainer/CardViewContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "View Cards"
+script = ExtResource("1_rcmli")
+
+[node name="ExitContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer/ExitContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/StartContainer/StartButton" to="CenterContainer/VBoxContainer/CardViewContainer/CardViewerButton" method="_on_start_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CardViewContainer/CardViewerButton" to="CenterContainer/VBoxContainer/CardViewContainer/CardViewerButton" method="_on_card_view_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ExitContainer/ExitButton" to="CenterContainer/VBoxContainer/CardViewContainer/CardViewerButton" method="_on_exit_button_pressed"]
