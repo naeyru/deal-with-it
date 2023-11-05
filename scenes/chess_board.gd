@@ -8,6 +8,9 @@ var visual_board = {}
 var board = ChessBoard.new()
 var chess_square = preload("res://scenes/chess_square.tscn")
 
+var first_selected = ""
+var second_selected = ""
+
 var textures = {
 	"black_bishop": preload("res://media/pieces/dark_bishop.svg"),
 	"black_king": preload("res://media/pieces/dark_king.svg"),
@@ -80,7 +83,7 @@ func init_empty_board():
 		for f in files.length():
 			var str_pos = String(files[f] + ranks_reverse[r])
 			visual_board[str_pos] = chess_square.instantiate()
-			visual_board[str_pos].position += Vector2(f, r) * dist
+			visual_board[str_pos].position += Vector2(f - 3.5, r - 3.5) * dist
 			visual_board[str_pos].pos = str_pos
 			
 			if light:
@@ -99,8 +102,62 @@ func init_empty_board():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	init_empty_board()
+	self.vis_load_fen(self.board.save_fen())
 
+
+# Signal
+signal square_selected(pos)
+signal win_game(team)  # Who won?
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	# Input
+	for r in ranks:
+		for f in files:
+			if visual_board[f + r].selected:
+				square_selected.emit(f + r)
+				visual_board[f + r].selected = false
+
+
+func _on_square_selected(pos):
+	if first_selected == "":
+		self.first_selected = pos
+	elif first_selected == pos:
+		self.first_selected = ""
+	else:
+		self.second_selected = pos
+		self.board.safe_move(self.first_selected, self.second_selected)
+		self.vis_load_fen(self.board.save_fen())
+		
+		# Mate detection. HEAVY.
+		var temp_search_w = board.get_pieces_of_team("white")
+		var temp_search_b = board.get_pieces_of_team("black")
+		var white_king = null
+		var black_king = null
+		
+		for r in ranks:
+			for f in files:
+				if board.board[f + r].name == "king":
+					if board.board[f + r].team == "white":
+						white_king = f + r
+					else:
+						black_king = f + r
+				
+		if self.board.active_turn == "w" and board.get_legal_moves_at(white_king) == []:
+			if self.board.is_checkmate("white"):
+				win_game.emit("black")
+			elif self.board.is_stalemate("white"):
+				win_game.emit("white")
+		elif board.get_legal_moves_at(black_king) == []:
+			if self.board.is_checkmate("black"):
+				win_game.emit("white")
+			elif self.board.is_stalemate("black"):
+				win_game.emit("")
+			
+		self.board.print_board_info()
+		self.first_selected = ""
+		self.second_selected = ""
+
+
+func _on_win_game(team):
+	print("fucking nerd lmao")

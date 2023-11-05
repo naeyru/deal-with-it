@@ -215,10 +215,55 @@ func safe_move(pos, newpos):
 				self.en_passant_square = "-"
 		else:
 			self.en_passant_square = "-"
+				
 		
 		if self.active_turn == "w":  # DO CASTLING LOGIC HERE
+			# King move: no castle opportunities
+			if self.board[newpos].name == "king":
+				var newcastle = ""
+				for m in self.castle:
+					if m not in "KQ":
+						newcastle += m
+				self.castle = newcastle
+				
+				# Rook move: no castle on side
+			if self.board[newpos].name == "rook":
+				var newcastle = ""
+				for m in self.castle:
+					var bad_side = ""
+					if pos[0] == "a":
+						bad_side = "K"
+					else:
+						bad_side = "Q"
+					
+					if m != bad_side:
+						newcastle += m
+				self.castle = newcastle
+				
 			self.active_turn = "b"
 		else:
+			# King move: no castle opportunities
+			if self.board[newpos].name == "king":
+				var newcastle = ""
+				for m in self.castle:
+					if m not in "kq":
+						newcastle += m
+				self.castle = newcastle
+				
+				# Rook move: no castle on side
+			if self.board[newpos].name == "rook":
+				var newcastle = ""
+				for m in self.castle:
+					var bad_side = ""
+					if pos[0] == "a":
+						bad_side = "k"
+					else:
+						bad_side = "q"
+					
+					if m != bad_side:
+						newcastle += m
+				self.castle = newcastle
+			
 			self.active_turn = "w"
 			self.full_moves = str(int(self.full_moves) + 1)
 		
@@ -284,4 +329,4 @@ func print_pieces():
 
 
 func print_board_info():
-	print("Active turn: ", self.active_turn, "\nEn Passant Square: ", self.en_passant_square, "\nMoves: ", self.full_moves, "\n")
+	print("Active turn: ", self.active_turn, "\nEn Passant Square: ", self.en_passant_square, "\nCastle: ", self.castle, "\nMoves: ", self.full_moves, "\n")

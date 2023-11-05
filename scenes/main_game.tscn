@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwu1yatmhdg2w"]
+
+[ext_resource type="Script" path="res://scenes/main_game.gd" id="1_5vb4d"]
+[ext_resource type="PackedScene" uid="uid://bnjlmvjyoy3ib" path="res://scenes/chess_board.tscn" id="1_eion1"]
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_5vb4d")
+
+[node name="ChessBoard" parent="." instance=ExtResource("1_eion1")]
+scale = Vector2(2, 2)
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -4,3 +4,6 @@
 
 [node name="ChessBoard" type="Node2D"]
 script = ExtResource("1_q0dyt")
+
+[connection signal="square_selected" from="." to="." method="_on_square_selected"]
+[connection signal="win_game" from="." to="." method="_on_win_game"]

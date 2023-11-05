@@ -45,6 +45,11 @@ func movable(pos, board):
 			if board.board[String(char(pos_f) + char(pos_r + (2*dir_f)))].name == "":
 				possible.append(String(char(pos_f) + char(pos_r + (2*dir_f))))
 	
+	for p in possible.size():
+		if board.board[possible[p]].name == "duck":
+			possible.pop_at(p)
+			break
+			
 	return possible
 
 func _init(team):

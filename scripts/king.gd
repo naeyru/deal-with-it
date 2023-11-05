@@ -19,7 +19,7 @@ func movable(pos, board):
 	var movable = []
 
 	for piece in possible:
-		if board.board[piece].team != self.team:
+		if board.board[piece].team != self.team and board.board[piece].name != "duck":
 			movable.append(piece)
 	
 	return movable

@@ -18,18 +18,18 @@ var textures = {
 	"empty": preload("res://media/pieces/empty.png")
 }
 
-var preload_textures = {}
-
-
 var pos = ""  # e.g. a1, f7
 var square_color = Color("#ffffff")  # Color object
-var selected_color = Color("#ffff00")
+var hover_color = Color("#ffff00")
+var selected_color = Color("#ff0000")
 var selected = false
+var color_selected = false
 var piece = "pawn"
 var team = "white"
 var label = null
 var mouse_hovering = false
 var texture_index = String(team + "_" + piece)
+var dist = 50
 
 
 func change_color(new_color = self.square_color):
@@ -43,18 +43,27 @@ func _on_mouse_entered():
 func _on_mouse_exited():
 	self.mouse_hovering = false
 
+
 func _ready():
 	$Label.text = "Location: " + self.pos
 	$Label.visible = false
 
+
 func _process(delta):  # Do all that needs to be done
+	if self.color_selected:
+		$SquareColor.modulate = self.selected_color
 	
 	if self.mouse_hovering:
-		$SquareColor.modulate = self.selected_color
-		$Label.position = get_viewport().get_mouse_position() + Vector2(15, 15)
+		if not self.color_selected:
+			$SquareColor.modulate = self.hover_color
+		$Label.position = get_viewport().get_mouse_position() - Vector2(ProjectSettings.get_setting("display/window/size/viewport_width"), ProjectSettings.get_setting("display/window/size/viewport_height"))/2 + Vector2(15, 15)
 		$Label.visible = true
 	else:
-		$SquareColor.modulate = self.square_color
+		if not self.color_selected:
+			$SquareColor.modulate = self.square_color
 		$Label.visible = false
+	
+	if Input.is_action_just_pressed("ui_select") and self.mouse_hovering:
+		self.selected = not self.selected
 	
 	$ChessPieceVisual.texture = self.textures[self.texture_index]

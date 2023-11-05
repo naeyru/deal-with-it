@@ -13,6 +13,8 @@ func visible(pos, board):
 			var new_pos = String(char(npos_f) + char(npos_r))
 		
 			while board.valid_pos(new_pos):
+				if board.board[new_pos].name == "duck":
+					break
 				visible_squares.append(new_pos)
 				if board.board[new_pos].name != "":
 					break
