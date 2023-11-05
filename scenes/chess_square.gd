@@ -23,7 +23,7 @@ var square_color = Color("#ffffff")  # Color object
 var hover_color = Color("#ffff00")
 var selected_color = Color("#ff0000")
 var selected = false
-var color_selected = false
+var select_toggle = false
 var piece = "pawn"
 var team = "white"
 var label = null
@@ -50,16 +50,16 @@ func _ready():
 
 
 func _process(delta):  # Do all that needs to be done
-	if self.color_selected:
+	if self.select_toggle:
 		$SquareColor.modulate = self.selected_color
 	
 	if self.mouse_hovering:
-		if not self.color_selected:
+		if not self.select_toggle:
 			$SquareColor.modulate = self.hover_color
 		$Label.position = get_viewport().get_mouse_position() - Vector2(ProjectSettings.get_setting("display/window/size/viewport_width"), ProjectSettings.get_setting("display/window/size/viewport_height"))/2 + Vector2(15, 15)
 		$Label.visible = true
 	else:
-		if not self.color_selected:
+		if not self.select_toggle:
 			$SquareColor.modulate = self.square_color
 		$Label.visible = false
 	

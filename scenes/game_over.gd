@@ -1,9 +1,11 @@
 extends Node2D
 
 
+var game_over_text = "Game Over!"
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Label.text = game_over_text
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

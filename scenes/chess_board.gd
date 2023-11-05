@@ -28,6 +28,7 @@ var textures = {
 	"empty": preload("res://media/pieces/empty.png")
 }
 
+var end_screen = preload("res://scenes/game_over.tscn")
 
 # FEN
 func vis_load_fen(fen):
@@ -117,6 +118,9 @@ func _process(delta):
 			if visual_board[f + r].selected:
 				square_selected.emit(f + r)
 				visual_board[f + r].selected = false
+				visual_board[f + r].select_toggle = not visual_board[f + r].select_toggle
+			if visual_board[f + r].select_toggle and f + r != self.first_selected:
+				visual_board[f + r].select_toggle = not visual_board[f + r].select_toggle
 
 
 func _on_square_selected(pos):
@@ -125,6 +129,7 @@ func _on_square_selected(pos):
 	elif first_selected == pos:
 		self.first_selected = ""
 	else:
+		# Moving
 		self.second_selected = pos
 		self.board.safe_move(self.first_selected, self.second_selected)
 		self.vis_load_fen(self.board.save_fen())
@@ -160,4 +165,11 @@ func _on_square_selected(pos):
 
 
 func _on_win_game(team):
-	print("fucking nerd lmao")
+	var game_over = end_screen.instantiate()
+
+	if team == "white":
+		game_over.game_over_text = "White won!"
+	elif team == "black":
+		game_over.game_over_text = "Black won!"
+	
+	add_child(game_over)
