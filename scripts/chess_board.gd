@@ -191,6 +191,29 @@ func get_legal_moves_at(pos):
 	
 	return legal
 
+func set_piece(location, piece):
+	var temp = piece.to_lower()
+	var team = ""
+	
+	if temp == piece:
+		team = "black"
+	else:
+		team = "white"
+	
+	if temp == "k":
+		self.board[location] = King.new(team)
+	elif temp == "q":
+		self.board[location] = Queen.new(team)
+	elif temp == "r":
+		self.board[location] = Rook.new(team)
+	elif temp == "b":
+		self.board[location] = Bishop.new(team)
+	elif temp == "n":
+		self.board[location] = Knight.new(team)
+	elif temp == "p":
+		self.board[location] = Pawn.new(team)
+	elif temp == "d":
+		self.board[location] = Duck.new()
 
 func safe_move(pos, newpos):
 	var legal = self.get_legal_moves_at(pos)
