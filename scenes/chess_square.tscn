@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/chess_square.gd" id="1_s7p53"]
 [ext_resource type="Texture2D" uid="uid://bvrkgw5ps0j1q" path="res://media/pieces/dark_king.svg" id="2_35cdq"]
-[ext_resource type="PackedScene" path="res://scenes/piece_label.tscn" id="2_renxd"]
+[ext_resource type="PackedScene" uid="uid://b8figu5iakyn3" path="res://scenes/piece_label.tscn" id="2_renxd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g3fsj"]
 size = Vector2(50, 50)
