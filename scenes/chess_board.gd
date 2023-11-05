@@ -132,6 +132,15 @@ func _on_square_selected(pos):
 		# Moving
 		self.second_selected = pos
 		self.board.safe_move(self.first_selected, self.second_selected)
+		
+		# Auto-promote pawn
+		if self.board.board[pos].name == "pawn" and pos[1] in "18":
+			var myteam = self.board.board[pos].team
+			if myteam == "white":
+				self.board.set_piece(pos, 'Q')
+			else:
+				self.board.set_piece(pos, 'q')
+		
 		self.vis_load_fen(self.board.save_fen())
 		
 		# Mate detection. HEAVY.

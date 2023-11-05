@@ -341,7 +341,7 @@ func valid_pos(pos):
 
 
 # Initialize with default game
-func _init(fen="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"):
+func _init(fen="rnbqkbnr/pppppppp/8/8/8/8/PPPDPPPP/RNBQKBNR w KQkq - 0 1"):
 	self.load_fen(fen)
 
 

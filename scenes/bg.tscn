@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cntaoerh4hnh7"]
+
+[sub_resource type="Gradient" id="Gradient_hy8jl"]
+offsets = PackedFloat32Array(0, 0.921053, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.0646965, 0.0646965, 0.0646965, 1, 0.118581, 0.118581, 0.118581, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_u1t2v"]
+noise_type = 4
+seed = 1
+frequency = 0.0229
+fractal_type = 2
+fractal_octaves = 2
+fractal_gain = -0.385
+fractal_weighted_strength = 0.7
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2vgpw"]
+width = 2048
+height = 1200
+seamless = true
+color_ramp = SubResource("Gradient_hy8jl")
+noise = SubResource("FastNoiseLite_u1t2v")
+
+[node name="bg" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(972, 522)
+texture = SubResource("NoiseTexture2D_2vgpw")

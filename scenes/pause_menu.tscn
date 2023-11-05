@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://8f0ycsdllyqu"]
+[gd_scene load_steps=3 format=3 uid="uid://c6ypqlltm2tye"]
 
-[ext_resource type="Script" path="res://scenes/game_over.gd" id="1_u2yp0"]
+[ext_resource type="Script" path="res://scenes/pause_menu.gd" id="1_641u5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1dnwu"]
 font_size = 100
@@ -9,8 +9,8 @@ outline_color = Color(0, 0, 0, 1)
 shadow_size = 5
 shadow_color = Color(0, 0, 0, 1)
 
-[node name="GameOver" type="Node2D"]
-script = ExtResource("1_u2yp0")
+[node name="PauseMenu" type="Node2D"]
+script = ExtResource("1_641u5")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8
@@ -33,33 +33,50 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 2.0
-offset_top = -16.0
-offset_right = 575.0
-offset_bottom = 124.0
+offset_left = -16.0
+offset_top = -39.0
+offset_right = 647.0
+offset_bottom = 101.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(-300, -140)
-text = "Game Over!"
+text = "Game Paused"
 label_settings = SubResource("LabelSettings_1dnwu")
 metadata/_edit_use_anchors_ = true
 
-[node name="PlayAgain" type="Button" parent="."]
+[node name="Resume" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -76.0
-offset_top = 5.0
+offset_top = -23.0
 offset_right = 431.0
-offset_bottom = 150.0
+offset_bottom = 122.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.3, 0.3)
 theme_override_font_sizes/font_size = 100
-text = "Play Again"
+text = "Resume"
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = 35.0
+offset_right = 452.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.22, 0.22)
+theme_override_font_sizes/font_size = 100
+text = "Restart"
 metadata/_edit_use_anchors_ = true
 
 [node name="MainMenu" type="Button" parent="."]
@@ -68,10 +85,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -55.0
-offset_top = 69.0
-offset_right = 496.0
-offset_bottom = 214.0
+offset_left = -54.0
+offset_top = 80.0
+offset_right = 497.0
+offset_bottom = 225.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.2, 0.2)
@@ -79,5 +96,6 @@ theme_override_font_sizes/font_size = 100
 text = "Main Menu"
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]

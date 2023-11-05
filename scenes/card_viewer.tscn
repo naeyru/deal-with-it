@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dde8ge0kgu1s8"]
+[gd_scene load_steps=24 format=3 uid="uid://dde8ge0kgu1s8"]
 
 [ext_resource type="Texture2D" uid="uid://daqllpvdrp8ac" path="res://media/cards/graphics/AnnointedCard.svg" id="1_3ctwi"]
 [ext_resource type="Script" path="res://scripts/card_scroll_container.gd" id="1_13gh1"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://rp8bgvbumbmg" path="res://media/cards/graphics/WetConcreteCard.svg" id="20_4hl7b"]
 [ext_resource type="Script" path="res://scenes/go_back_button.gd" id="20_7r15q"]
 [ext_resource type="Texture2D" uid="uid://bg3lgrcm5vm8d" path="res://media/cards/graphics/CastleCard.svg" id="21_64oqj"]
+[ext_resource type="PackedScene" uid="uid://cntaoerh4hnh7" path="res://scenes/bg.tscn" id="23_6f0gj"]
 
 [node name="card_viewer" type="Node2D"]
 
@@ -153,5 +154,9 @@ text = "Go Back"
 script = ExtResource("20_7r15q")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="bg" parent="." instance=ExtResource("23_6f0gj")]
+show_behind_parent = true
+position = Vector2(-962, -518)
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MarginContainer2/Button" to="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer" method="_on_button_pressed"]

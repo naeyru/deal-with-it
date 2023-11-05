@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bnjlmvjyoy3ib"]
+[gd_scene load_steps=3 format=3 uid="uid://bnjlmvjyoy3ib"]
 
 [ext_resource type="Script" path="res://scenes/chess_board.gd" id="1_q0dyt"]
+[ext_resource type="PackedScene" uid="uid://cntaoerh4hnh7" path="res://scenes/bg.tscn" id="2_aenue"]
 
 [node name="ChessBoard" type="Node2D"]
 script = ExtResource("1_q0dyt")
+
+[node name="bg" parent="." instance=ExtResource("2_aenue")]
+position = Vector2(-987, -509)
 
 [connection signal="square_selected" from="." to="." method="_on_square_selected"]
 [connection signal="win_game" from="." to="." method="_on_win_game"]

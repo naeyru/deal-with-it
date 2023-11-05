@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxsktwhqhlnne"]
+[gd_scene load_steps=4 format=3 uid="uid://dxsktwhqhlnne"]
 
 [ext_resource type="Script" path="res://scenes/main_game.gd" id="1_5vb4d"]
 [ext_resource type="PackedScene" uid="uid://bnjlmvjyoy3ib" path="res://scenes/chess_board.tscn" id="1_eion1"]
+[ext_resource type="PackedScene" uid="uid://c6ypqlltm2tye" path="res://scenes/pause_menu.tscn" id="3_eqtbf"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_5vb4d")
@@ -10,3 +11,6 @@ script = ExtResource("1_5vb4d")
 scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_eqtbf")]
+scale = Vector2(2, 2)

@@ -42,7 +42,7 @@ func movable(pos, board):
 	if board.valid_pos(String(char(pos_f) + char(pos_r + dir_f))) and board.board[String(char(pos_f) + char(pos_r + dir_f))].name == "":
 		possible.append(String(char(pos_f) + char(pos_r + dir_f)))
 		if pos[1] in "27":
-			if board.board[String(char(pos_f) + char(pos_r + (2*dir_f)))].name == "":
+			if board.valid_pos(String(char(pos_f) + char(pos_r + (2*dir_f)))) and board.board[String(char(pos_f) + char(pos_r + (2*dir_f)))].name == "":
 				possible.append(String(char(pos_f) + char(pos_r + (2*dir_f))))
 	
 	for p in possible.size():
