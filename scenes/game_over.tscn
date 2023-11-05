@@ -1,13 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://8f0ycsdllyqu"]
+[gd_scene load_steps=3 format=3 uid="uid://8f0ycsdllyqu"]
+
+[ext_resource type="Script" path="res://scenes/game_over.gd" id="1_u2yp0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1dnwu"]
-font_size = 100
+font_size = 80
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)
 shadow_size = 5
 shadow_color = Color(0, 0, 0, 1)
 
 [node name="GameOver" type="Node2D"]
+script = ExtResource("1_u2yp0")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 8
@@ -15,11 +18,57 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -277.5
-offset_top = -70.0
-offset_right = 277.5
-offset_bottom = 70.0
+offset_left = -221.0
+offset_top = -56.5
+offset_right = 221.0
+offset_bottom = 56.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "Game over!"
 label_settings = SubResource("LabelSettings_1dnwu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -20.0
+offset_right = -210.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(14, 7)
+color = Color(0, 0, 0, 0.47451)
+
+[node name="PlayAgain" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = 80.0
+offset_right = 44.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play Again"
+
+[node name="MainMenu" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = 140.0
+offset_right = 44.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
