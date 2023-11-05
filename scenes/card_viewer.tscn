@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dde8ge0kgu1s8"]
+[gd_scene load_steps=23 format=3 uid="uid://dde8ge0kgu1s8"]
 
 [ext_resource type="Texture2D" uid="uid://daqllpvdrp8ac" path="res://media/cards/graphics/AnnointedCard.svg" id="1_3ctwi"]
 [ext_resource type="Script" path="res://scripts/card_scroll_container.gd" id="1_13gh1"]
@@ -19,7 +19,9 @@
 [ext_resource type="Texture2D" uid="uid://b257vp30geua7" path="res://media/cards/graphics/TurduckenCard.svg" id="17_kyilb"]
 [ext_resource type="Texture2D" uid="uid://de5mxmjrdss14" path="res://media/cards/graphics/RaceAccidentCard.svg" id="18_u73mu"]
 [ext_resource type="Texture2D" uid="uid://c7kurylw3y2o0" path="res://media/cards/graphics/RainingMenCard.svg" id="19_7n3am"]
+[ext_resource type="Texture2D" uid="uid://rp8bgvbumbmg" path="res://media/cards/graphics/WetConcreteCard.svg" id="20_4hl7b"]
 [ext_resource type="Script" path="res://scenes/go_back_button.gd" id="20_7r15q"]
+[ext_resource type="Texture2D" uid="uid://bg3lgrcm5vm8d" path="res://media/cards/graphics/CastleCard.svg" id="21_64oqj"]
 
 [node name="card_viewer" type="Node2D"]
 
@@ -56,7 +58,7 @@ vertical_scroll_mode = 0
 script = ExtResource("1_13gh1")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer"]
-custom_minimum_size = Vector2(7250, 600)
+custom_minimum_size = Vector2(8100, 600)
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
@@ -129,6 +131,14 @@ texture = ExtResource("18_u73mu")
 [node name="RainingMenCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
 position = Vector2(7025, 325)
 texture = ExtResource("19_7n3am")
+
+[node name="WetConcreteCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(7450, 325)
+texture = ExtResource("20_4hl7b")
+
+[node name="CastleCard" type="Sprite2D" parent="CenterContainer/VBoxContainer/MarginContainer/ScrollContainer/HBoxContainer"]
+position = Vector2(7875, 325)
+texture = ExtResource("21_64oqj")
 
 [node name="MarginContainer2" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
